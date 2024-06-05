@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvm5jjt2q7pke"
+path="res://.godot/imported/detail-plate.obj-5450b756a896667417894915ab3b72a6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail-plate.obj-5450b756a896667417894915ab3b72a6.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/detail-plate.obj"
+dest_files=["res://.godot/imported/detail-plate.obj-5450b756a896667417894915ab3b72a6.mesh", "res://.godot/imported/detail-plate.obj-5450b756a896667417894915ab3b72a6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

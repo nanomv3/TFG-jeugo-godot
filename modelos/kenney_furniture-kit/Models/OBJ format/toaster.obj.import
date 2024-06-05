@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://q7618tipssqn"
+path="res://.godot/imported/toaster.obj-43be51827cf305b0b170da86e32d847b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/toaster.obj-43be51827cf305b0b170da86e32d847b.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/toaster.obj"
+dest_files=["res://.godot/imported/toaster.obj-43be51827cf305b0b170da86e32d847b.mesh", "res://.godot/imported/toaster.obj-43be51827cf305b0b170da86e32d847b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

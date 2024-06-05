@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cn8y4tbfty0cw"
+path="res://.godot/imported/fish-large.obj-2a962ae53c3a33bd5c7bb4cea9f6c023.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fish-large.obj-2a962ae53c3a33bd5c7bb4cea9f6c023.mesh"]
+
+source_file="res://modelos/kenney_survival-kit/Models/OBJ format/fish-large.obj"
+dest_files=["res://.godot/imported/fish-large.obj-2a962ae53c3a33bd5c7bb4cea9f6c023.mesh", "res://.godot/imported/fish-large.obj-2a962ae53c3a33bd5c7bb4cea9f6c023.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://k6dy30rxkb0v"
+path="res://.godot/imported/bear.obj-81d29f6360dd9d0ea0e93db02fce7fad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bear.obj-81d29f6360dd9d0ea0e93db02fce7fad.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/bear.obj"
+dest_files=["res://.godot/imported/bear.obj-81d29f6360dd9d0ea0e93db02fce7fad.mesh", "res://.godot/imported/bear.obj-81d29f6360dd9d0ea0e93db02fce7fad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

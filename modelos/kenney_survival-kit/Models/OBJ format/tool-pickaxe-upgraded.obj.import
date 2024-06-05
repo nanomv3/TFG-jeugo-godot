@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnwrym3ve1cjj"
+path="res://.godot/imported/tool-pickaxe-upgraded.obj-cff5750a45bbb006270306d14f5c3921.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tool-pickaxe-upgraded.obj-cff5750a45bbb006270306d14f5c3921.mesh"]
+
+source_file="res://modelos/kenney_survival-kit/Models/OBJ format/tool-pickaxe-upgraded.obj"
+dest_files=["res://.godot/imported/tool-pickaxe-upgraded.obj-cff5750a45bbb006270306d14f5c3921.mesh", "res://.godot/imported/tool-pickaxe-upgraded.obj-cff5750a45bbb006270306d14f5c3921.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

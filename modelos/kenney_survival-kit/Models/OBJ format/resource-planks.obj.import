@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgm5jj8f2eii"
+path="res://.godot/imported/resource-planks.obj-1204bd1650df6c4daf849936913338a3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/resource-planks.obj-1204bd1650df6c4daf849936913338a3.mesh"]
+
+source_file="res://modelos/kenney_survival-kit/Models/OBJ format/resource-planks.obj"
+dest_files=["res://.godot/imported/resource-planks.obj-1204bd1650df6c4daf849936913338a3.mesh", "res://.godot/imported/resource-planks.obj-1204bd1650df6c4daf849936913338a3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

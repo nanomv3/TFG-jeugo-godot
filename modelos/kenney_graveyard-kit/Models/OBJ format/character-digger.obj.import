@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbiuixmcpx168"
+path="res://.godot/imported/character-digger.obj-6435daf74ba46b60e13e57affe69adff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-digger.obj-6435daf74ba46b60e13e57affe69adff.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/character-digger.obj"
+dest_files=["res://.godot/imported/character-digger.obj-6435daf74ba46b60e13e57affe69adff.mesh", "res://.godot/imported/character-digger.obj-6435daf74ba46b60e13e57affe69adff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

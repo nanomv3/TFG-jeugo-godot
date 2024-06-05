@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cuoxyi0tg1xhh"
+path="res://.godot/imported/barrel-open.obj-8863aa7ca45185367c8770718599e672.mesh"
+
+[deps]
+
+files=["res://.godot/imported/barrel-open.obj-8863aa7ca45185367c8770718599e672.mesh"]
+
+source_file="res://modelos/kenney_survival-kit/Models/OBJ format/barrel-open.obj"
+dest_files=["res://.godot/imported/barrel-open.obj-8863aa7ca45185367c8770718599e672.mesh", "res://.godot/imported/barrel-open.obj-8863aa7ca45185367c8770718599e672.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

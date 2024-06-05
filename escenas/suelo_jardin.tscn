@@ -1,0 +1,169 @@
+[gd_scene load_steps=26 format=3 uid="uid://es7clgksvrts"]
+
+[ext_resource type="PackedScene" uid="uid://5qeeqwiyfvvq" path="res://escenas/personaje_fp.tscn" id="1_q3hoq"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter.gd" id="2_y0loo"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="3_2elbv"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/create_inside_random.gd" id="4_diu03"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_item.gd" id="5_2c5cg"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/modifiers/randomize_transforms.gd" id="5_dy1pa"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_shape.gd" id="6_0cxli"]
+[ext_resource type="Script" path="res://addons/proton_scatter/src/shapes/box_shape.gd" id="7_mg6hy"]
+[ext_resource type="PackedScene" uid="uid://d0i1o4rrrlrjx" path="res://escenas/casa.tscn" id="9_d6t87"]
+[ext_resource type="PackedScene" uid="uid://bxuki0ib0k30h" path="res://escenas/foco.tscn" id="10_s7lln"]
+[ext_resource type="Script" path="res://escenas/PasswordWindow.gd" id="11_hsb58"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p45qc"]
+sky_top_color = Color(0.027451, 0.0313726, 0.0980392, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+sky_curve = 0.09
+ground_bottom_color = Color(0.00784314, 0.0352941, 0.0117647, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+sun_angle_max = 10.0
+sun_curve = 0.05
+
+[sub_resource type="Sky" id="Sky_1kf0a"]
+sky_material = SubResource("ProceduralSkyMaterial_p45qc")
+
+[sub_resource type="Environment" id="Environment_1gl27"]
+background_mode = 2
+sky = SubResource("Sky_1kf0a")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2ikc"]
+albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_acqkd"]
+material = SubResource("StandardMaterial3D_b2ikc")
+size = Vector3(100, 1, 100)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oem7n"]
+data = PackedVector3Array(-50, 0.5, 50, 50, 0.5, 50, -50, -0.5, 50, 50, 0.5, 50, 50, -0.5, 50, -50, -0.5, 50, 50, 0.5, -50, -50, 0.5, -50, 50, -0.5, -50, -50, 0.5, -50, -50, -0.5, -50, 50, -0.5, -50, 50, 0.5, 50, 50, 0.5, -50, 50, -0.5, 50, 50, 0.5, -50, 50, -0.5, -50, 50, -0.5, 50, -50, 0.5, -50, -50, 0.5, 50, -50, -0.5, -50, -50, 0.5, 50, -50, -0.5, 50, -50, -0.5, -50, 50, 0.5, 50, -50, 0.5, 50, 50, 0.5, -50, -50, 0.5, 50, -50, 0.5, -50, 50, 0.5, -50, -50, -0.5, 50, 50, -0.5, 50, -50, -0.5, -50, 50, -0.5, 50, 50, -0.5, -50, -50, -0.5, -50)
+
+[sub_resource type="Resource" id="Resource_3v2g0"]
+script = ExtResource("4_diu03")
+amount = 10000
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = true
+reference_frame = 1
+
+[sub_resource type="Resource" id="Resource_1wo1t"]
+script = ExtResource("5_dy1pa")
+position = Vector3(0, 0, 0)
+rotation = Vector3(0, 0, 0)
+scale = Vector3(0, 0, 0)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 2
+
+[sub_resource type="Resource" id="Resource_jtkeh"]
+script = ExtResource("3_2elbv")
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_3v2g0"), SubResource("Resource_1wo1t")])
+
+[sub_resource type="Resource" id="Resource_2lj2w"]
+script = ExtResource("7_mg6hy")
+size = Vector3(15.891, 1, 17.9774)
+
+[sub_resource type="Resource" id="Resource_fcu3n"]
+script = ExtResource("4_diu03")
+amount = 350
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = true
+reference_frame = 1
+
+[sub_resource type="Resource" id="Resource_e3o25"]
+script = ExtResource("5_dy1pa")
+position = Vector3(0, 0, 0)
+rotation = Vector3(0, 0, 0)
+scale = Vector3(2, 2, 2)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 1
+
+[sub_resource type="Resource" id="Resource_qmmut"]
+script = ExtResource("3_2elbv")
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_fcu3n"), SubResource("Resource_e3o25")])
+
+[sub_resource type="Resource" id="Resource_8rj40"]
+script = ExtResource("7_mg6hy")
+size = Vector3(15.891, 1, 17.9774)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.224951, 0.260389, -0.938933, 0, 0.96363, 0.267238, 0.97437, 0.0601156, -0.21677, 0, 0, 0)
+light_energy = 12.421
+light_indirect_energy = 0.0
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1gl27")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_q3hoq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.13448, 1.43473, 5.14011)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_acqkd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_oem7n")
+
+[node name="ProtonScatter" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
+script = ExtResource("2_y0loo")
+modifier_stack = SubResource("Resource_jtkeh")
+Performance/use_chunks = true
+Performance/chunk_dimensions = Vector3(15, 15, 15)
+
+[node name="ScatterItem" type="Node3D" parent="MeshInstance3D/StaticBody3D/ProtonScatter"]
+script = ExtResource("5_2c5cg")
+path = "res://modelos/kenney_survival-kit/Models/GLB format/grass-large.glb"
+
+[node name="ScatterShape" type="Node3D" parent="MeshInstance3D/StaticBody3D/ProtonScatter"]
+transform = Transform3D(6.25, 0, -1.63913e-07, 0, 1, 0, 1.86264e-07, 0, 5.5, 0, 0.5, 0)
+script = ExtResource("6_0cxli")
+shape = SubResource("Resource_2lj2w")
+
+[node name="ProtonScatter2" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
+script = ExtResource("2_y0loo")
+modifier_stack = SubResource("Resource_qmmut")
+Performance/use_chunks = true
+Performance/chunk_dimensions = Vector3(15, 15, 15)
+
+[node name="ScatterItem" type="Node3D" parent="MeshInstance3D/StaticBody3D/ProtonScatter2"]
+script = ExtResource("5_2c5cg")
+path = "res://addons/proton_scatter/demos/assets/models/pine_tree.glb"
+
+[node name="ScatterShape" type="Node3D" parent="MeshInstance3D/StaticBody3D/ProtonScatter2"]
+transform = Transform3D(6.25, 0, -1.63913e-07, 0, 1, 0, 1.86264e-07, 0, 5.5, 0, 0.5, 0)
+script = ExtResource("6_0cxli")
+shape = SubResource("Resource_8rj40")
+
+[node name="casa" parent="." instance=ExtResource("9_d6t87")]
+transform = Transform3D(2.11375, 0, -3.39589, 0, 4, 0, 3.39589, 0, 2.11375, 27.465, 0.5, -13.097)
+
+[node name="foco" parent="." instance=ExtResource("10_s7lln")]
+transform = Transform3D(-2.62639, 0, 1.44985, 0, 3, 0, -1.44985, 0, -2.62639, 26.8924, 0.5, -7.42682)
+
+[node name="PasswordWindow" type="Window" parent="."]
+script = ExtResource("11_hsb58")
+
+[node name="PasswordInput" type="LineEdit" parent="PasswordWindow"]
+offset_right = 67.0625
+offset_bottom = 31.0
+
+[node name="OkButton" type="Button" parent="PasswordWindow"]
+offset_right = 8.0
+offset_bottom = 8.0

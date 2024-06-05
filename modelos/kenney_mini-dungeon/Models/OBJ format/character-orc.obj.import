@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bu3drham0j17a"
+path="res://.godot/imported/character-orc.obj-baf7dec3ec56e9322f26bc3dacdf918b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-orc.obj-baf7dec3ec56e9322f26bc3dacdf918b.mesh"]
+
+source_file="res://modelos/kenney_mini-dungeon/Models/OBJ format/character-orc.obj"
+dest_files=["res://.godot/imported/character-orc.obj-baf7dec3ec56e9322f26bc3dacdf918b.mesh", "res://.godot/imported/character-orc.obj-baf7dec3ec56e9322f26bc3dacdf918b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

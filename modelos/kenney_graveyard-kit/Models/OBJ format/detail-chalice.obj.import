@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dy6pwlnp06ves"
+path="res://.godot/imported/detail-chalice.obj-c2c44d0cfcde0b443f10402d90b7153d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail-chalice.obj-c2c44d0cfcde0b443f10402d90b7153d.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/detail-chalice.obj"
+dest_files=["res://.godot/imported/detail-chalice.obj-c2c44d0cfcde0b443f10402d90b7153d.mesh", "res://.godot/imported/detail-chalice.obj-c2c44d0cfcde0b443f10402d90b7153d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

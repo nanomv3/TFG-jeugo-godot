@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://5qeeqwiyfvvq"]
+
+[ext_resource type="Script" path="res://escenas/personaje_fp.gd" id="1_xawe4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ffw15"]
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vd4d2"]
+height = 1.8
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_xawe4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_ffw15")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_vd4d2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -0.5)

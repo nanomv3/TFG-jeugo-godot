@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://pg5pvqnldk88"
+path="res://.godot/imported/rugRectangle.obj-41ba4e74baecb466ea13fa555c21bcc4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rugRectangle.obj-41ba4e74baecb466ea13fa555c21bcc4.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/rugRectangle.obj"
+dest_files=["res://.godot/imported/rugRectangle.obj-41ba4e74baecb466ea13fa555c21bcc4.mesh", "res://.godot/imported/rugRectangle.obj-41ba4e74baecb466ea13fa555c21bcc4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

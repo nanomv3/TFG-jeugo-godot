@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clme05kofhri3"
+path="res://.godot/imported/fire-basket.obj-f60985c860f300ae3fb2a5b8b1261a67.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fire-basket.obj-f60985c860f300ae3fb2a5b8b1261a67.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/fire-basket.obj"
+dest_files=["res://.godot/imported/fire-basket.obj-f60985c860f300ae3fb2a5b8b1261a67.mesh", "res://.godot/imported/fire-basket.obj-f60985c860f300ae3fb2a5b8b1261a67.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

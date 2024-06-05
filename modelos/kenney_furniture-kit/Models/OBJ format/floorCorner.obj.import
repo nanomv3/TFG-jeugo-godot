@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bg1ly6ssnrihf"
+path="res://.godot/imported/floorCorner.obj-61e7b70cb36eb08a8c55c484d6712838.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floorCorner.obj-61e7b70cb36eb08a8c55c484d6712838.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/floorCorner.obj"
+dest_files=["res://.godot/imported/floorCorner.obj-61e7b70cb36eb08a8c55c484d6712838.mesh", "res://.godot/imported/floorCorner.obj-61e7b70cb36eb08a8c55c484d6712838.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcoq1a4bhc3l5"
+path="res://.godot/imported/bathroomCabinetDrawer.obj-11e13c82d30fa9fc621b862aa343d7ac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bathroomCabinetDrawer.obj-11e13c82d30fa9fc621b862aa343d7ac.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/bathroomCabinetDrawer.obj"
+dest_files=["res://.godot/imported/bathroomCabinetDrawer.obj-11e13c82d30fa9fc621b862aa343d7ac.mesh", "res://.godot/imported/bathroomCabinetDrawer.obj-11e13c82d30fa9fc621b862aa343d7ac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

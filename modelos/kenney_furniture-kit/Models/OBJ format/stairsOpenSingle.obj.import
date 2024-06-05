@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dw0oeogd1gvub"
+path="res://.godot/imported/stairsOpenSingle.obj-edcb8804cad586e1c3938d2c9b9494ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairsOpenSingle.obj-edcb8804cad586e1c3938d2c9b9494ae.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/stairsOpenSingle.obj"
+dest_files=["res://.godot/imported/stairsOpenSingle.obj-edcb8804cad586e1c3938d2c9b9494ae.mesh", "res://.godot/imported/stairsOpenSingle.obj-edcb8804cad586e1c3938d2c9b9494ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

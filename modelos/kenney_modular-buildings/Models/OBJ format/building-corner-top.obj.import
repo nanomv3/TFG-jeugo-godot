@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dr6i7ppbkk5iu"
+path="res://.godot/imported/building-corner-top.obj-102ca89ed87c3b3f5599d202ace72cdd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-corner-top.obj-102ca89ed87c3b3f5599d202ace72cdd.mesh"]
+
+source_file="res://modelos/kenney_modular-buildings/Models/OBJ format/building-corner-top.obj"
+dest_files=["res://.godot/imported/building-corner-top.obj-102ca89ed87c3b3f5599d202ace72cdd.mesh", "res://.godot/imported/building-corner-top.obj-102ca89ed87c3b3f5599d202ace72cdd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

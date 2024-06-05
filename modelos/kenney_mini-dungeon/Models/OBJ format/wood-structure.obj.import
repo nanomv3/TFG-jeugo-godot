@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://did07xwky2w0s"
+path="res://.godot/imported/wood-structure.obj-fae36c8d91e52ce740bf2fa1f1ce9a07.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wood-structure.obj-fae36c8d91e52ce740bf2fa1f1ce9a07.mesh"]
+
+source_file="res://modelos/kenney_mini-dungeon/Models/OBJ format/wood-structure.obj"
+dest_files=["res://.godot/imported/wood-structure.obj-fae36c8d91e52ce740bf2fa1f1ce9a07.mesh", "res://.godot/imported/wood-structure.obj-fae36c8d91e52ce740bf2fa1f1ce9a07.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

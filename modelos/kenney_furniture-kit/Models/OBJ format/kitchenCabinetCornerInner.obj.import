@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhv3sgj1bma6a"
+path="res://.godot/imported/kitchenCabinetCornerInner.obj-ebb4584039647b0a4b9e2422df586d37.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenCabinetCornerInner.obj-ebb4584039647b0a4b9e2422df586d37.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/kitchenCabinetCornerInner.obj"
+dest_files=["res://.godot/imported/kitchenCabinetCornerInner.obj-ebb4584039647b0a4b9e2422df586d37.mesh", "res://.godot/imported/kitchenCabinetCornerInner.obj-ebb4584039647b0a4b9e2422df586d37.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

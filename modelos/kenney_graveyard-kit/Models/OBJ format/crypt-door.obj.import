@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bd0ihmcdq4pd2"
+path="res://.godot/imported/crypt-door.obj-782a380d1c7689f53a80e25af4b9eabe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crypt-door.obj-782a380d1c7689f53a80e25af4b9eabe.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/crypt-door.obj"
+dest_files=["res://.godot/imported/crypt-door.obj-782a380d1c7689f53a80e25af4b9eabe.mesh", "res://.godot/imported/crypt-door.obj-782a380d1c7689f53a80e25af4b9eabe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

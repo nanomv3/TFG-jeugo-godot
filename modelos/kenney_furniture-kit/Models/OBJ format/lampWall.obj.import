@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yj4qrpof53y2"
+path="res://.godot/imported/lampWall.obj-a4a763ea7794f568c46b01a7a5c2f4ff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lampWall.obj-a4a763ea7794f568c46b01a7a5c2f4ff.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/lampWall.obj"
+dest_files=["res://.godot/imported/lampWall.obj-a4a763ea7794f568c46b01a7a5c2f4ff.mesh", "res://.godot/imported/lampWall.obj-a4a763ea7794f568c46b01a7a5c2f4ff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

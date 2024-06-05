@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bldpjkdgcfnqc"
+path="res://.godot/imported/debris-tire.obj-a8fe7a1b312564a17f25049e669cc825.mesh"
+
+[deps]
+
+files=["res://.godot/imported/debris-tire.obj-a8fe7a1b312564a17f25049e669cc825.mesh"]
+
+source_file="res://modelos/kenney_car-kit/Models/OBJ format/debris-tire.obj"
+dest_files=["res://.godot/imported/debris-tire.obj-a8fe7a1b312564a17f25049e669cc825.mesh", "res://.godot/imported/debris-tire.obj-a8fe7a1b312564a17f25049e669cc825.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

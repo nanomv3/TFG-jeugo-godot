@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dk5hj3vn34v4r"
+path="res://.godot/imported/kitchenBlender.obj-bc7cf2821239888540227cd905cddac8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenBlender.obj-bc7cf2821239888540227cd905cddac8.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/kitchenBlender.obj"
+dest_files=["res://.godot/imported/kitchenBlender.obj-bc7cf2821239888540227cd905cddac8.mesh", "res://.godot/imported/kitchenBlender.obj-bc7cf2821239888540227cd905cddac8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

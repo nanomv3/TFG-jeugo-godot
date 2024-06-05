@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhjqntsf35gd8"
+path="res://.godot/imported/wall.obj-d3033e6ef76dff586d9aaab83c11c8bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall.obj-d3033e6ef76dff586d9aaab83c11c8bf.mesh"]
+
+source_file="res://modelos/kenney_mini-dungeon/Models/OBJ format/wall.obj"
+dest_files=["res://.godot/imported/wall.obj-d3033e6ef76dff586d9aaab83c11c8bf.mesh", "res://.godot/imported/wall.obj-d3033e6ef76dff586d9aaab83c11c8bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

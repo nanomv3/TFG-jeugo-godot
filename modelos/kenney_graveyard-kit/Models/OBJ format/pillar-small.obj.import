@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpvbvnwfxvaqj"
+path="res://.godot/imported/pillar-small.obj-d9cfb13a99222e3e8ae0e75cce38f9bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pillar-small.obj-d9cfb13a99222e3e8ae0e75cce38f9bf.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/pillar-small.obj"
+dest_files=["res://.godot/imported/pillar-small.obj-d9cfb13a99222e3e8ae0e75cce38f9bf.mesh", "res://.godot/imported/pillar-small.obj-d9cfb13a99222e3e8ae0e75cce38f9bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

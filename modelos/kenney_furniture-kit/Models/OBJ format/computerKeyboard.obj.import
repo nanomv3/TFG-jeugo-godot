@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dj33fg0gjmv36"
+path="res://.godot/imported/computerKeyboard.obj-8d05f71ea635b88bdfef2427b87a9036.mesh"
+
+[deps]
+
+files=["res://.godot/imported/computerKeyboard.obj-8d05f71ea635b88bdfef2427b87a9036.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/computerKeyboard.obj"
+dest_files=["res://.godot/imported/computerKeyboard.obj-8d05f71ea635b88bdfef2427b87a9036.mesh", "res://.godot/imported/computerKeyboard.obj-8d05f71ea635b88bdfef2427b87a9036.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

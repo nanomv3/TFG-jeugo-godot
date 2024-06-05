@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvwvg88o0ltrk"
+path="res://.godot/imported/lantern-candle.obj-befe1fc47b4f4971e9a21be2b8336f8f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lantern-candle.obj-befe1fc47b4f4971e9a21be2b8336f8f.mesh"]
+
+source_file="res://modelos/kenney_graveyard-kit/Models/OBJ format/lantern-candle.obj"
+dest_files=["res://.godot/imported/lantern-candle.obj-befe1fc47b4f4971e9a21be2b8336f8f.mesh", "res://.godot/imported/lantern-candle.obj-befe1fc47b4f4971e9a21be2b8336f8f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crkwoscol1xqj"
+path="res://.godot/imported/building-window-right-sill.obj-a4ef42e9ffb30f7288ad1cb4f6a79bba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-window-right-sill.obj-a4ef42e9ffb30f7288ad1cb4f6a79bba.mesh"]
+
+source_file="res://modelos/kenney_modular-buildings/Models/OBJ format/building-window-right-sill.obj"
+dest_files=["res://.godot/imported/building-window-right-sill.obj-a4ef42e9ffb30f7288ad1cb4f6a79bba.mesh", "res://.godot/imported/building-window-right-sill.obj-a4ef42e9ffb30f7288ad1cb4f6a79bba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

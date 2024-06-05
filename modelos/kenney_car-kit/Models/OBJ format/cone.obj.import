@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpif3qc0yce8y"
+path="res://.godot/imported/cone.obj-140fd5d5e57e35e247b5488ec487bdf0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cone.obj-140fd5d5e57e35e247b5488ec487bdf0.mesh"]
+
+source_file="res://modelos/kenney_car-kit/Models/OBJ format/cone.obj"
+dest_files=["res://.godot/imported/cone.obj-140fd5d5e57e35e247b5488ec487bdf0.mesh", "res://.godot/imported/cone.obj-140fd5d5e57e35e247b5488ec487bdf0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

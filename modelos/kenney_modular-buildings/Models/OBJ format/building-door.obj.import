@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dgo8dkr1sm68s"
+path="res://.godot/imported/building-door.obj-b251689780951d9c4668e2a4318ca7f5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building-door.obj-b251689780951d9c4668e2a4318ca7f5.mesh"]
+
+source_file="res://modelos/kenney_modular-buildings/Models/OBJ format/building-door.obj"
+dest_files=["res://.godot/imported/building-door.obj-b251689780951d9c4668e2a4318ca7f5.mesh", "res://.godot/imported/building-door.obj-b251689780951d9c4668e2a4318ca7f5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cj5abk56sbgk6"
+path="res://.godot/imported/laptop.obj-0f6535465d19cfacc55bb959f9ebc30b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/laptop.obj-0f6535465d19cfacc55bb959f9ebc30b.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/laptop.obj"
+dest_files=["res://.godot/imported/laptop.obj-0f6535465d19cfacc55bb959f9ebc30b.mesh", "res://.godot/imported/laptop.obj-0f6535465d19cfacc55bb959f9ebc30b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

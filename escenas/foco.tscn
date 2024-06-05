@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxuki0ib0k30h"]
+
+[ext_resource type="PackedScene" uid="uid://cnf0piqdw7bui" path="res://modelos/focos.glb" id="1_8130x"]
+
+[node name="foco" type="Node3D"]
+
+[node name="foco" parent="." instance=ExtResource("1_8130x")]
+transform = Transform3D(0.944242, 0, 0, 0, 0.944242, 0, 0, 0, 0.944242, 0, 0, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="foco"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.5, 0.1)
+light_energy = 8.596
+light_indirect_energy = 8.919
+light_volumetric_fog_energy = 8.919
+light_size = 0.394

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8w14xyfr2agv"
+path="res://.godot/imported/bookcaseClosedDoors.obj-49142f2c332f45e20e0eb8042ced502d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bookcaseClosedDoors.obj-49142f2c332f45e20e0eb8042ced502d.mesh"]
+
+source_file="res://modelos/kenney_furniture-kit/Models/OBJ format/bookcaseClosedDoors.obj"
+dest_files=["res://.godot/imported/bookcaseClosedDoors.obj-49142f2c332f45e20e0eb8042ced502d.mesh", "res://.godot/imported/bookcaseClosedDoors.obj-49142f2c332f45e20e0eb8042ced502d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
