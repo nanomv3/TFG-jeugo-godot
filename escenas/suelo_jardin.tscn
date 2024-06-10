@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://es7clgksvrts"]
+[gd_scene load_steps=25 format=3 uid="uid://es7clgksvrts"]
 
 [ext_resource type="PackedScene" uid="uid://5qeeqwiyfvvq" path="res://escenas/personaje_fp.tscn" id="1_q3hoq"]
 [ext_resource type="Script" path="res://addons/proton_scatter/src/scatter.gd" id="2_y0loo"]
@@ -10,7 +10,6 @@
 [ext_resource type="Script" path="res://addons/proton_scatter/src/shapes/box_shape.gd" id="7_mg6hy"]
 [ext_resource type="PackedScene" uid="uid://d0i1o4rrrlrjx" path="res://escenas/casa.tscn" id="9_d6t87"]
 [ext_resource type="PackedScene" uid="uid://bxuki0ib0k30h" path="res://escenas/foco.tscn" id="10_s7lln"]
-[ext_resource type="Script" path="res://escenas/PasswordWindow.gd" id="11_hsb58"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p45qc"]
 sky_top_color = Color(0.027451, 0.0313726, 0.0980392, 1)
@@ -33,17 +32,17 @@ fog_enabled = true
 fog_light_color = Color(0, 0, 0, 1)
 fog_density = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2ikc"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qac4n"]
 albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_acqkd"]
-material = SubResource("StandardMaterial3D_b2ikc")
+material = SubResource("StandardMaterial3D_qac4n")
 size = Vector3(100, 1, 100)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oem7n"]
 data = PackedVector3Array(-50, 0.5, 50, 50, 0.5, 50, -50, -0.5, 50, 50, 0.5, 50, 50, -0.5, 50, -50, -0.5, 50, 50, 0.5, -50, -50, 0.5, -50, 50, -0.5, -50, -50, 0.5, -50, -50, -0.5, -50, 50, -0.5, -50, 50, 0.5, 50, 50, 0.5, -50, 50, -0.5, 50, 50, 0.5, -50, 50, -0.5, -50, 50, -0.5, 50, -50, 0.5, -50, -50, 0.5, 50, -50, -0.5, -50, -50, 0.5, 50, -50, -0.5, 50, -50, -0.5, -50, 50, 0.5, 50, -50, 0.5, 50, 50, 0.5, -50, -50, 0.5, 50, -50, 0.5, -50, 50, 0.5, -50, -50, -0.5, 50, 50, -0.5, 50, -50, -0.5, -50, 50, -0.5, 50, 50, -0.5, -50, -50, -0.5, -50)
 
-[sub_resource type="Resource" id="Resource_3v2g0"]
+[sub_resource type="Resource" id="Resource_oegex"]
 script = ExtResource("4_diu03")
 amount = 10000
 enabled = true
@@ -52,7 +51,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_1wo1t"]
+[sub_resource type="Resource" id="Resource_oa2y1"]
 script = ExtResource("5_dy1pa")
 position = Vector3(0, 0, 0)
 rotation = Vector3(0, 0, 0)
@@ -63,15 +62,15 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_jtkeh"]
+[sub_resource type="Resource" id="Resource_yik2g"]
 script = ExtResource("3_2elbv")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_3v2g0"), SubResource("Resource_1wo1t")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_oegex"), SubResource("Resource_oa2y1")])
 
 [sub_resource type="Resource" id="Resource_2lj2w"]
 script = ExtResource("7_mg6hy")
 size = Vector3(15.891, 1, 17.9774)
 
-[sub_resource type="Resource" id="Resource_fcu3n"]
+[sub_resource type="Resource" id="Resource_217i4"]
 script = ExtResource("4_diu03")
 amount = 350
 enabled = true
@@ -80,7 +79,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_e3o25"]
+[sub_resource type="Resource" id="Resource_gred1"]
 script = ExtResource("5_dy1pa")
 position = Vector3(0, 0, 0)
 rotation = Vector3(0, 0, 0)
@@ -91,9 +90,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_qmmut"]
+[sub_resource type="Resource" id="Resource_lqdj2"]
 script = ExtResource("3_2elbv")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_fcu3n"), SubResource("Resource_e3o25")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_217i4"), SubResource("Resource_gred1")])
 
 [sub_resource type="Resource" id="Resource_8rj40"]
 script = ExtResource("7_mg6hy")
@@ -123,7 +122,7 @@ shape = SubResource("ConcavePolygonShape3D_oem7n")
 
 [node name="ProtonScatter" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
 script = ExtResource("2_y0loo")
-modifier_stack = SubResource("Resource_jtkeh")
+modifier_stack = SubResource("Resource_yik2g")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
@@ -138,7 +137,7 @@ shape = SubResource("Resource_2lj2w")
 
 [node name="ProtonScatter2" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
 script = ExtResource("2_y0loo")
-modifier_stack = SubResource("Resource_qmmut")
+modifier_stack = SubResource("Resource_lqdj2")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
@@ -156,14 +155,3 @@ transform = Transform3D(2.11375, 0, -3.39589, 0, 4, 0, 3.39589, 0, 2.11375, 27.4
 
 [node name="foco" parent="." instance=ExtResource("10_s7lln")]
 transform = Transform3D(-2.62639, 0, 1.44985, 0, 3, 0, -1.44985, 0, -2.62639, 26.8924, 0.5, -7.42682)
-
-[node name="PasswordWindow" type="Window" parent="."]
-script = ExtResource("11_hsb58")
-
-[node name="PasswordInput" type="LineEdit" parent="PasswordWindow"]
-offset_right = 67.0625
-offset_bottom = 31.0
-
-[node name="OkButton" type="Button" parent="PasswordWindow"]
-offset_right = 8.0
-offset_bottom = 8.0

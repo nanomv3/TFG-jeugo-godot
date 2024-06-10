@@ -87,22 +87,22 @@ data = PackedVector3Array(-0.5, 0.2125, -0.6, -0.5, 0, -0.6, 0.5, 0, -0.6, 0.5, 
 
 [node name="casa" type="Node3D"]
 
-[node name="roof-gable" type="MeshInstance3D" parent="."]
+[node name="techo" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.06742, 0, 0.8, -0.1)
 mesh = SubResource("ArrayMesh_s15o0")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="roof-gable"]
+[node name="StaticBody3D" type="StaticBody3D" parent="techo"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="roof-gable/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="techo/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xjyxr")
 
-[node name="building-steps-wide" type="MeshInstance3D" parent="."]
+[node name="escaleras" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_goxjk")
 skeleton = NodePath("")
 script = ExtResource("2_33je3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building-steps-wide"]
+[node name="StaticBody3D" type="StaticBody3D" parent="escaleras"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building-steps-wide/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="escaleras/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xb1p6")

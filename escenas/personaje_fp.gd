@@ -7,31 +7,27 @@ const JUMP_VELOCITY = 4.5
 var x_sensibility = 0.0005
 var y_sensibility = 0.001
 
-@export var house: StaticBody3D
-@export var password_window: Window
-
-@export var interact_distance: float = 5.0
-
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 
 func _ready():
+	var house = get_node("casa")
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	#_on_CollisionShape3D_body_entered(house)
+
+# Función para detectar colisiones
+#func _on_CollisionShape3D_body_entered(body):
+	#if body.name == "escaleras":
+		#var popup = Popup.new()
+		#popup.title = "Hola Mundo"
+		#popup.popup_()
+		#add_child(popup)
 
 func _input(event):
 	if event is InputEventMouseMotion:
-		print(x_sensibility)
 		rotate_y( - event.relative.x * x_sensibility)
 		$Camera3D.rotate_x( - event.relative.y * y_sensibility)
-		
-		if event.pressed and event.scancode == KEY_E:
-			if is_near_house():
-				password_window.popup_centered()
-				
-
-func is_near_house() -> bool:
-	return global_transform.origin.distance_to(house.global_transform.origin) < interact_distance
 
 func _physics_process(delta):
 	# Add the gravity.
