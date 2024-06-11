@@ -42,7 +42,7 @@ size = Vector3(100, 1, 100)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oem7n"]
 data = PackedVector3Array(-50, 0.5, 50, 50, 0.5, 50, -50, -0.5, 50, 50, 0.5, 50, 50, -0.5, 50, -50, -0.5, 50, 50, 0.5, -50, -50, 0.5, -50, 50, -0.5, -50, -50, 0.5, -50, -50, -0.5, -50, 50, -0.5, -50, 50, 0.5, 50, 50, 0.5, -50, 50, -0.5, 50, 50, 0.5, -50, 50, -0.5, -50, 50, -0.5, 50, -50, 0.5, -50, -50, 0.5, 50, -50, -0.5, -50, -50, 0.5, 50, -50, -0.5, 50, -50, -0.5, -50, 50, 0.5, 50, -50, 0.5, 50, 50, 0.5, -50, -50, 0.5, 50, -50, 0.5, -50, 50, 0.5, -50, -50, -0.5, 50, 50, -0.5, 50, -50, -0.5, -50, 50, -0.5, 50, 50, -0.5, -50, -50, -0.5, -50)
 
-[sub_resource type="Resource" id="Resource_oegex"]
+[sub_resource type="Resource" id="Resource_0f4wc"]
 script = ExtResource("4_diu03")
 amount = 10000
 enabled = true
@@ -51,7 +51,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_oa2y1"]
+[sub_resource type="Resource" id="Resource_rw0yf"]
 script = ExtResource("5_dy1pa")
 position = Vector3(0, 0, 0)
 rotation = Vector3(0, 0, 0)
@@ -62,15 +62,15 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_yik2g"]
+[sub_resource type="Resource" id="Resource_dyhiq"]
 script = ExtResource("3_2elbv")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_oegex"), SubResource("Resource_oa2y1")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_0f4wc"), SubResource("Resource_rw0yf")])
 
 [sub_resource type="Resource" id="Resource_2lj2w"]
 script = ExtResource("7_mg6hy")
 size = Vector3(15.891, 1, 17.9774)
 
-[sub_resource type="Resource" id="Resource_217i4"]
+[sub_resource type="Resource" id="Resource_kd5a2"]
 script = ExtResource("4_diu03")
 amount = 350
 enabled = true
@@ -79,7 +79,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_gred1"]
+[sub_resource type="Resource" id="Resource_jhdug"]
 script = ExtResource("5_dy1pa")
 position = Vector3(0, 0, 0)
 rotation = Vector3(0, 0, 0)
@@ -90,9 +90,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_lqdj2"]
+[sub_resource type="Resource" id="Resource_rnx36"]
 script = ExtResource("3_2elbv")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_217i4"), SubResource("Resource_gred1")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_kd5a2"), SubResource("Resource_jhdug")])
 
 [sub_resource type="Resource" id="Resource_8rj40"]
 script = ExtResource("7_mg6hy")
@@ -122,7 +122,7 @@ shape = SubResource("ConcavePolygonShape3D_oem7n")
 
 [node name="ProtonScatter" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
 script = ExtResource("2_y0loo")
-modifier_stack = SubResource("Resource_yik2g")
+modifier_stack = SubResource("Resource_dyhiq")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
@@ -137,7 +137,7 @@ shape = SubResource("Resource_2lj2w")
 
 [node name="ProtonScatter2" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
 script = ExtResource("2_y0loo")
-modifier_stack = SubResource("Resource_lqdj2")
+modifier_stack = SubResource("Resource_rnx36")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 

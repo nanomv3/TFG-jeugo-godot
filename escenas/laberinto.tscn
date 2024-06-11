@@ -1636,6 +1636,7 @@ shape = SubResource("ConcavePolygonShape3D_qc200")
 transform = Transform3D(-4, 0, -3.49691e-07, 0, 4, 0, 3.49691e-07, 0, -4, -13.0979, 0.5, -31.3654)
 
 [node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.229202, 0, 0)
 mesh = SubResource("ArrayMesh_7pnte")
 skeleton = NodePath("")
 
@@ -2052,6 +2053,30 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro48/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
+[node name="muro143" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-4, 0, -3.49691e-07, 0, 4, 0, 3.49691e-07, 0, -4, -24.5272, 0.5, -10.9585)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro143"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro143/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro143/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro144" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-4, 0, -3.49691e-07, 0, 4, 0, 3.49691e-07, 0, -4, -21.5363, 0.5, -10.9585)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro144"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro144/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro144/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
 [node name="muro73" type="Node3D" parent="muros laberinto"]
 transform = Transform3D(-4, 0, -3.49691e-07, 0, 4, 0, 3.49691e-07, 0, -4, -35.1659, 0.5, -20.033)
 
@@ -2424,18 +2449,6 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro88/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
-[node name="muro99" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -48.4232, 0.5, -10.8052)
-
-[node name="muro100" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -36.9535, 0.5, -10.7685)
-
-[node name="muro101" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -40.7143, 0.5, -10.7805)
-
-[node name="muro102" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -44.497, 0.5, -10.7926)
-
 [node name="muro103" type="Node3D" parent="muros laberinto"]
 transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -52.4837, 0.5, 22.6158)
 
@@ -2592,40 +2605,28 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro115/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
-[node name="muro116" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(0.0235964, 0, 3.99993, 0, 4, 0, -3.99993, 0, 0.0235964, -19.3881, 0.5, 34.8103)
+[node name="muro230" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0235964, 0, 3.99993, 0, 4, 0, -3.99993, 0, 0.0235964, -39.0096, 0.5, 29.8921)
 
-[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro116"]
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro230"]
 mesh = SubResource("ArrayMesh_7pnte")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro116/brick-wall"]
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro230/brick-wall"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro116/brick-wall/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro230/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
-[node name="muro117" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(0.0235964, 0, 3.99993, 0, 4, 0, -3.99993, 0, 0.0235964, -19.3659, 0.5, 31.0496)
+[node name="muro231" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0235964, 0, 3.99993, 0, 4, 0, -3.99993, 0, 0.0235964, -39.0096, 0.5, 26.2905)
 
-[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro117"]
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro231"]
 mesh = SubResource("ArrayMesh_7pnte")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro117/brick-wall"]
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro231/brick-wall"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro117/brick-wall/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_qc200")
-
-[node name="muro118" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(0.0235964, 0, 3.99993, 0, 4, 0, -3.99993, 0, 0.0235964, -19.3436, 0.5, 27.2669)
-
-[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro118"]
-mesh = SubResource("ArrayMesh_7pnte")
-skeleton = NodePath("")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro118/brick-wall"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro118/brick-wall/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro231/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
 [node name="muro119" type="Node3D" parent="muros laberinto"]
@@ -2675,33 +2676,6 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro122/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
-
-[node name="muro123" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -36.9692, 0.5, -5.85828)
-
-[node name="muro124" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -40.73, 0.5, -5.87029)
-
-[node name="muro125" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -44.5127, 0.5, -5.88238)
-
-[node name="muro126" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -33.0763, 0.5, -5.84585)
-
-[node name="muro127" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -32.5194, 0.5, -5.88053)
-
-[node name="muro128" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -48.4998, 0.5, 13.1653)
-
-[node name="muro129" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -37.0301, 0.5, 13.2019)
-
-[node name="muro130" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -40.7909, 0.5, 13.1899)
-
-[node name="muro131" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -44.5736, 0.5, 13.1779)
 
 [node name="muro132" type="Node3D" parent="muros laberinto"]
 transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -37.0458, 0.5, 18.1122)
@@ -2762,18 +2736,6 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro136/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
-
-[node name="muro137" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -48.4642, 0.5, 2.02644)
-
-[node name="muro138" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -36.9945, 0.5, 2.06308)
-
-[node name="muro139" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -40.7553, 0.5, 2.05107)
-
-[node name="muro140" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -44.538, 0.5, 2.03898)
 
 [node name="muro141" type="Node3D" parent="muros laberinto"]
 transform = Transform3D(-3.99998, 0, 0.0127755, 0, 4, 0, -0.0127755, 0, -3.99998, -37.0102, 0.5, 6.97332)
@@ -2864,15 +2826,6 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro147/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
-
-[node name="muro148" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -32.5485, 0.5, 3.20877)
-
-[node name="muro149" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -32.5387, 0.5, 0.164027)
-
-[node name="muro150" type="Node3D" parent="muros laberinto"]
-transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -32.5292, 0.5, -2.82689)
 
 [node name="muro151" type="Node3D" parent="muros laberinto"]
 transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -7.45924, 0.5, 19.8676)
@@ -3052,6 +3005,30 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro165/brick-wall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro165/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro193" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -12.2095, 0.5, 5.58497)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro193"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro193/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro193/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro194" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0127753, 0, -3.99998, 0, 4, 0, 3.99998, 0, -0.0127753, -12.2, 0.5, 2.59405)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro194"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro194/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro194/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
 [node name="muro166" type="Node3D" parent="muros laberinto"]
@@ -3358,4 +3335,1968 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro192/brick-wall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro192/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro202" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99995, 0, -0.0199663, 0, 4, 0, 0.0199663, 0, 3.99995, 23.3085, 0.5, -22.9766)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro202"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro202/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro202/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro203" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99995, 0, -0.0199663, 0, 4, 0, 0.0199663, 0, 3.99995, 11.8389, 0.5, -23.0339)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro203"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro203/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro203/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro204" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99995, 0, -0.0199663, 0, 4, 0, 0.0199663, 0, 3.99995, 15.5996, 0.5, -23.0151)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro204"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro204/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro204/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro205" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99995, 0, -0.0199663, 0, 4, 0, 0.0199663, 0, 3.99995, 19.3823, 0.5, -22.9962)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro205"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro205/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro205/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro206" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 8.48188, 0.5, -26.422)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro206"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro206/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro206/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro208" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 8.54116, 0.5, -34.1307)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro208"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro208/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro208/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro209" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 8.51207, 0.5, -30.3481)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro209"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro209/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro209/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro207" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.1921, 0.5, -39.431)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro207"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro207/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro207/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro210" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.2514, 0.5, -47.1397)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro210"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro210/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro210/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro211" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.2223, 0.5, -43.3571)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro211"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro211/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro211/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro212" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.1921, 0.5, -26.4571)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro212"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro212/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro212/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro213" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.2514, 0.5, -34.1658)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro213"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro213/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro213/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro227" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.2514, 0.5, -36.1955)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro227"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro227/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro227/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro226" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0307871, 0, -3.99989, 0, 4, 0, 3.99989, 0, -0.0307871, 21.2223, 0.5, -30.3832)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro226"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro226/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro226/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro215" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, -2.58715, 0.5, -42.3163)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro215"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro215/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro215/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro218" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 1.33906, 0.5, -42.2932)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro218"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro218/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro218/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro216" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 5.23597, 0.5, -42.3163)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro216"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro216/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro216/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro219" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 9.16219, 0.5, -42.2932)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro219"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro219/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro219/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro220" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 12.8598, 0.5, -42.3163)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro220"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro220/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro220/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro221" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 16.786, 0.5, -42.2932)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro221"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro221/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro221/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro228" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 16.9058, 0.5, -32.8977)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro228"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro228/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro228/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro229" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 20.8321, 0.5, -32.8747)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro229"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro229/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro229/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro222" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 5.23597, 0.5, -47.0215)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro222"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro222/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro222/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro223" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 9.16219, 0.5, -46.9984)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro223"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro223/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro223/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro224" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 12.8598, 0.5, -47.0215)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro224"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro224/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro224/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro225" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 16.786, 0.5, -46.9984)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro225"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro225/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro225/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro246" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 32.1153, 0.5, -22.9572)
+
+[node name="muro247" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 32.0974, 0.5, -19.3572)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro247"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.95239, 0, -7.8968)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro247/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro247/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro248" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 32.0595, 0.5, -11.7634)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro248"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro248/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro248/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro249" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 32.0443, 0.5, -8.71865)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro249"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro249/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro249/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro250" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 32.0293, 0.5, -5.72779)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro250"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro250/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro250/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro251" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 26.7183, 0.5, -15.5324)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro251"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro251/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro251/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro252" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 26.7555, 0.5, -22.9839)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro252"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro252/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro252/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro253" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 26.7375, 0.5, -19.384)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro253"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro253/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro253/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro254" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 26.6996, 0.5, -11.7902)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro254"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro254/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro254/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro255" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 26.6844, 0.5, -8.74541)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro255"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro255/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro255/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro256" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 26.6695, 0.5, -5.75454)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro256"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro256/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro256/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro267" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 29.3003, 0.5, -7.14707)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro267"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.27273, 0, 0.688744)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro267/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro267/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro268" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 29.2624, 0.5, 0.446735)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro268"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.290756, 0, 0.683846)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro268/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro268/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro269" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 29.2472, 0.5, 3.4915)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro269"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.290755, 0, 0.683847)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro269/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro269/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro270" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 29.2322, 0.5, 6.48236)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro270"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.290755, 0, 0.683848)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro270/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro270/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro271" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 29.2472, 0.5, 9.87247)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro271"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.290755, 0, 0.683847)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro271/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro271/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro272" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 29.2322, 0.5, 12.8633)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro272"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.290755, 0, 0.683848)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro272/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro272/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro273" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0199661, 0, 3.99995, 0, 4, 0, -3.99995, 0, 0.0199661, 4.27464, 0.5, -35.0686)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro273"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro273/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro273/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro282" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99907, 0, -0.0861427, 0, 4, 0, 0.0861427, 0, 3.99907, 0.87888, 0.5, -31.8445)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro282"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro282/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro282/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro280" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99907, 0, -0.0861427, 0, 4, 0, 0.0861427, 0, 3.99907, 35.2647, 0.5, -11.8169)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro280"]
+transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -1.36916, 0, 0.0294926)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro280/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro280/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro281" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99907, 0, -0.0861427, 0, 4, 0, 0.0861427, 0, 3.99907, 32.2745, 0.5, -11.8813)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro281"]
+transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -1.36916, 0, 0.0294926)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro281/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro281/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro286" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99907, 0, -0.0861427, 0, 4, 0, 0.0861427, 0, 3.99907, 37.8867, 0.5, -19.3316)
+
+[node name="muro287" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99907, 0, -0.0861427, 0, 4, 0, 0.0861427, 0, 3.99907, 0.922721, 0.5, -35.3869)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro287"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro287/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro287/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro294" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 3.34521, 0.5, -36.8188)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro294"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51447, 0, -1.54349)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro294/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro294/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro314" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 11.0865, 0.5, -45.0557)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro314"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51447, 0, -1.54349)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro314/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro314/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro295" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 3.25136, 0.5, -25.3494)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro295"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.514469, 0, -1.54349)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro295/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro295/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro296" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 3.28213, 0.5, -29.11)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro296"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.514469, 0, -1.54349)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro296/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro296/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro297" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 3.31311, 0.5, -32.8926)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro297"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.514467, 0, -1.5435)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro297/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro297/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro298" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 5.82097, 0.5, 17.0256)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro298"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro298/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro298/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro299" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 5.72702, 0.5, 28.4949)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro299"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro299/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro299/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro300" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 5.75779, 0.5, 24.7343)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro300"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro300/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro300/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro301" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 5.78877, 0.5, 20.9517)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro301"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro301/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro301/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro302" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, 2.32827, 0.5, 31.8411)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro302"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro302/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro302/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro303" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -9.14075, 0.5, 31.7163)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro303"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro303/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro303/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro304" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -5.3802, 0.5, 31.7572)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro304"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro304/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro304/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro305" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -1.59766, 0.5, 31.7984)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro305"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro305/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro305/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro315" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -12.4284, 0.5, 31.6795)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro315"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro315/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro315/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro316" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -23.8974, 0.5, 31.5546)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro316"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro316/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro316/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro317" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -20.1368, 0.5, 31.5956)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro317"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro317/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro317/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro318" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -16.3543, 0.5, 31.6368)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro318"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro318/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro318/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro319" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -27.4623, 0.5, 31.6254)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro319"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000222683, 0, -0.0204463)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro319/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro319/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro320" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -38.9313, 0.5, 31.5006)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro320"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro320/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro320/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro321" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -35.1707, 0.5, 31.5416)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro321"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro321/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro321/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro322" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -31.3882, 0.5, 31.5827)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro322"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro322/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro322/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro306" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, 2.45468, 0.5, -3.65949)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro306"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro306/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro306/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro307" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -9.01434, 0.5, -3.78444)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro307"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro307/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro307/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro308" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -5.2538, 0.5, -3.74347)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro308"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro308/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro308/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro309" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(3.99976, 0, -0.0435622, 0, 4, 0, 0.0435622, 0, 3.99976, -1.47125, 0.5, -3.70228)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro309"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro309/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro309/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro310" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0362322, 0, -3.99984, 0, 4, 0, 3.99984, 0, -0.0362322, 2.47479, 0.5, 8.13851)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro310"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro310/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro310/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro311" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0362322, 0, -3.99984, 0, 4, 0, 3.99984, 0, -0.0362322, 2.57864, 0.5, -3.33076)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro311"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro311/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro311/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro312" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0362322, 0, -3.99984, 0, 4, 0, 3.99984, 0, -0.0362322, 2.54457, 0.5, 0.429814)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro312"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro312/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro312/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro313" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-0.0362322, 0, -3.99984, 0, 4, 0, 3.99984, 0, -0.0362322, 2.51029, 0.5, 4.21239)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro313"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro313/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro313/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro323" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 7.77169, 0.5, -21.3586)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro323"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro323/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro323/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro324" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 7.80247, 0.5, -25.1192)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro324"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro324/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro324/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro325" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 7.83345, 0.5, -28.9018)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro325"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro325/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro325/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro326" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 7.73986, 0.5, -17.4658)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro326"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro326/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro326/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro327" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 7.77178, 0.5, -16.9087)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro327"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro327/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro327/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro332" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 18.9103, 0.5, -21.2674)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro332"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro332/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro332/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro333" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, 18.941, 0.5, -25.0281)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro333"]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, -2.32831e-10, 0, 1, -0.566455, 0, 0.001809)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro333/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro333/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="brick-wall2" type="MeshInstance3D" parent="muros laberinto/muro333"]
+transform = Transform3D(-0.00280999, 0, -0.999997, 0, 1, 0, 0.999997, 0, -0.00280999, -4.7173, 0, 0.18055)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro333/brick-wall2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro333/brick-wall2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="brick-wall3" type="MeshInstance3D" parent="muros laberinto/muro333"]
+transform = Transform3D(-0.00280999, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00280999, -4.71752, 0, -0.385908)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro333/brick-wall3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro333/brick-wall3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="brick-wall4" type="MeshInstance3D" parent="muros laberinto/muro333"]
+transform = Transform3D(-0.00280998, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00280998, -3.83808, 0, 0.177742)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro333/brick-wall4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro333/brick-wall4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="brick-wall5" type="MeshInstance3D" parent="muros laberinto/muro333"]
+transform = Transform3D(-0.00280999, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00280999, -3.8383, 0, -0.388716)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro333/brick-wall5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro333/brick-wall5/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro334" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 11.459, 0.5, -16.8785)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro334"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro334/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro334/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro335" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 15.0589, 0.5, -16.849)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro335"]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, -2.32831e-10, 0, 1, -0.1065, 0, 0.000338554)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro335/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro335/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro339" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 5.86863, 0.5, 8.21886)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro339"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro339/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro339/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro340" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 9.46843, 0.5, 8.24833)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro340"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro340/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro340/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro341" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 17.0621, 0.5, 8.31049)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro341"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro341/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro341/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro342" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 20.1068, 0.5, 8.33541)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro342"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro342/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro342/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro343" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 23.0976, 0.5, 8.3599)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro343"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro343/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro343/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro344" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 13.2761, 0.5, 13.6396)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro344"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro344/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro344/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro345" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 5.82468, 0.5, 13.5786)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro345"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro345/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro345/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro346" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 9.42458, 0.5, 13.608)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro346"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro346/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro346/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro347" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 17.0182, 0.5, 13.6702)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro347"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro347/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro347/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro348" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 20.0629, 0.5, 13.6951)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro348"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro348/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro348/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro349" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 23.0537, 0.5, 13.7196)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro349"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro349/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro349/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro434" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 25.5325, 0.5, 13.6951)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro434"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro434/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro434/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro435" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 28.5234, 0.5, 13.7196)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro435"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro435/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro435/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro350" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 9.58146, 0.5, -5.56104)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro350"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro350/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro350/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro351" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 17.1751, 0.5, -5.49893)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro351"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro351/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro351/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro352" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 20.2198, 0.5, -5.47393)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro352"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro352/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro352/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro353" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 23.2106, 0.5, -5.4495)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro353"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro353/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro353/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro354" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 20.1748, 0.5, 3.53996)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro354"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro354/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro354/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro355" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 23.1656, 0.5, 3.56439)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro355"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro355/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro355/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro356" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 9.66027, 0.5, -1.39509)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro356"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro356/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro356/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro357" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 17.2539, 0.5, -1.33288)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro357"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro357/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro357/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro358" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 20.2986, 0.5, -1.30799)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro358"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro358/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro358/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro359" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 23.2894, 0.5, -1.28346)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro359"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro359/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro359/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro360" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 3.17321, 0.5, -12.6588)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro360"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro360/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro360/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro361" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 6.16403, 0.5, -12.6343)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro361"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro361/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro361/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro362" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 13.4587, 0.5, -5.51808)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro362"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro362/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro362/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro363" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 13.3713, 0.5, -9.16196)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro363"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro363/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro363/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro364" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, 13.4587, 0.5, -5.51808)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro364"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro364/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro364/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro365" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 13.3713, 0.5, -9.16196)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro365"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro365/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro365/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro366" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 13.2822, 0.5, -5.56306)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro366"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro366/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro366/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro367" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 3.19682, 0.5, -16.4271)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro367"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro367/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro367/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro368" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 3.10776, 0.5, -12.8282)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro368"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro368/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro368/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro369" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 13.0944, 0.5, 2.02849)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro369"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro369/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro369/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro370" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 13.0191, 0.5, 5.07236)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro370"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro370/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro370/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro371" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 12.9452, 0.5, 8.06236)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro371"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro371/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro371/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro372" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 17.0941, 0.5, 2.06126)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro372"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro372/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro372/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro373" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 17.0188, 0.5, 5.10502)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro373"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro373/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro373/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro374" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 16.9449, 0.5, 8.09509)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro374"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro374/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro374/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro375" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 17.1345, 0.5, -9.02828)
+
+[node name="muro376" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 17.0606, 0.5, -6.03821)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro376"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro376/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro376/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro377" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 17.1669, 0.5, -12.99)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro377"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro377/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro377/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro378" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 17.093, 0.5, -9.9999)
+
+[node name="muro379" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 9.51253, 0.5, 2.45912)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro379"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro379/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro379/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro380" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 9.4385, 0.5, 5.44909)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro380"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro380/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro380/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro381" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 9.60842, 0.5, -9.25985)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro381"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro381/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro381/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro382" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, 9.5345, 0.5, -6.26978)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro382"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro382/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro382/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro383" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, -8.2283, 0.5, -31.4128)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro383"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro383/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro383/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro384" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0327417, 0, 3.99987, 0, 4, 0, -3.99987, 0, 0.0327417, -8.19751, 0.5, -35.1735)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro384"]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, -2.32831e-10, 0, 1, -0.566455, 0, 0.001809)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro384/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro384/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="brick-wall3" type="MeshInstance3D" parent="muros laberinto/muro384"]
+transform = Transform3D(-0.00280999, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00280999, -4.71752, 0, -0.385908)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro384/brick-wall3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro384/brick-wall3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro390" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -17.7616, 0.5, -10.9512)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro390"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro390/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro390/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro391" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -14.1618, 0.5, -10.9218)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro391"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro391/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro391/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro392" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -6.56815, 0.5, -10.8596)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro392"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro392/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro392/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro393" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -3.5235, 0.5, -10.8347)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro393"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro393/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro393/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro394" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -0.532673, 0.5, -10.8102)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro394"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro394/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro394/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro398" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -6.61203, 0.5, -5.49991)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro398"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29817, 0, 5.46944)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro398/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro398/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro399" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -3.56738, 0.5, -5.47497)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro399"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29818, 0, 5.46944)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro399/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro399/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro400" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -0.57655, 0.5, -5.4505)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro400"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29818, 0, 5.46944)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro400/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro400/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro401" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -14.0488, 0.5, -24.7311)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro401"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0055418, 0, 0.677029)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro401/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro401/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro402" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -6.45512, 0.5, -24.669)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro402"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00554192, 0, 0.677029)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro402/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro402/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro405" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -3.45546, 0.5, -15.6301)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro405"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro405/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro405/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro406" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -0.464626, 0.5, -15.6057)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro406"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro406/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro406/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro407" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -13.97, 0.5, -20.5652)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro407"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro407/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro407/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro408" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -6.37633, 0.5, -20.503)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro408"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro408/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro408/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro409" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -3.33167, 0.5, -20.4781)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro409"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro409/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro409/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro410" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -0.340836, 0.5, -20.4536)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro410"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro410/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro410/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro411" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -20.457, 0.5, -31.8289)
+
+[node name="muro412" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -17.4662, 0.5, -31.8044)
+
+[node name="muro413" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99987, 0, 0.0327415, 0, 4, 0, -0.0327415, 0, -3.99987, -10.1716, 0.5, -24.6882)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro413"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00554228, 0, 0.677029)
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro413/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro413/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro420" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -10.5358, 0.5, -17.1416)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro420"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro420/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro420/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro421" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -10.6111, 0.5, -14.0977)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro421"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro421/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro421/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro422" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -10.6851, 0.5, -11.1077)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro422"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro422/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro422/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro423" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -6.53615, 0.5, -17.1088)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro423"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro423/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro423/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro424" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -6.61143, 0.5, -14.0651)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro424"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro424/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro424/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro425" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -6.6854, 0.5, -11.075)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro425"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro425/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro425/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro430" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -14.1177, 0.5, -16.711)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro430"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro430/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro430/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="muro431" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(0.0989149, 0, 3.99878, 0, 4, 0, -3.99878, 0, 0.0989149, -14.1918, 0.5, -13.721)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro431"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro431/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro431/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
