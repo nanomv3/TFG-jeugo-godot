@@ -3577,6 +3577,18 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro221/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
 
+[node name="muro232" type="Node3D" parent="muros laberinto"]
+transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 20.6746, 0.5, -42.2932)
+
+[node name="brick-wall" type="MeshInstance3D" parent="muros laberinto/muro232"]
+mesh = SubResource("ArrayMesh_7pnte")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="muros laberinto/muro232/brick-wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro232/brick-wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qc200")
+
 [node name="muro228" type="Node3D" parent="muros laberinto"]
 transform = Transform3D(-3.99993, 0, 0.0234568, 0, 4, 0, -0.0234568, 0, -3.99993, 16.9058, 0.5, -32.8977)
 
