@@ -3,20 +3,29 @@
 [ext_resource type="Texture2D" uid="uid://mo1i15goqe0t" path="res://modelos/kenney_graveyard-kit/Models/GLB format/Textures/colormap.png" id="1_22vpw"]
 [ext_resource type="PackedScene" uid="uid://5qeeqwiyfvvq" path="res://escenas/personaje_fp.tscn" id="2_e1q2t"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_t3ksv"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g3b37"]
+sky_top_color = Color(0.027451, 0.0313726, 0.0980392, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+sky_curve = 0.09
+ground_bottom_color = Color(0.00784314, 0.0352941, 0.0117647, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+sun_angle_max = 10.0
+sun_curve = 0.05
 
-[sub_resource type="Sky" id="Sky_t8hgw"]
-sky_material = SubResource("ProceduralSkyMaterial_t3ksv")
+[sub_resource type="Sky" id="Sky_1kf0a"]
+sky_material = SubResource("ProceduralSkyMaterial_g3b37")
 
-[sub_resource type="Environment" id="Environment_1p6co"]
+[sub_resource type="Environment" id="Environment_pwjx3"]
 background_mode = 2
-sky = SubResource("Sky_t8hgw")
+sky = SubResource("Sky_1kf0a")
 tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2ikc"]
-albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
+albedo_color = Color(0.109804, 0.231373, 0.109804, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_qn8yf"]
 material = SubResource("StandardMaterial3D_b2ikc")
@@ -68,15 +77,17 @@ data = PackedVector3Array(-0.5, 0.11, -0.3529, 0.5, 0.11, -0.3529, 0.5, 0.11, -0
 
 [node name="Node3D" type="Node3D"]
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("2_e1q2t")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -45.6311, 1.28809, -1.47702)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.224951, 0.260389, -0.938933, 0, 0.96363, 0.267238, 0.97437, 0.0601156, -0.21677, 0, 0, 0)
+light_energy = 12.421
+light_indirect_energy = 0.0
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_1p6co")
+environment = SubResource("Environment_pwjx3")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_e1q2t")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -45.6311, 1.28809, -1.47702)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_qn8yf")

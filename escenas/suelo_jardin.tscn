@@ -20,12 +20,12 @@ ground_horizon_color = Color(0, 0, 0, 1)
 sun_angle_max = 10.0
 sun_curve = 0.05
 
-[sub_resource type="Sky" id="Sky_1kf0a"]
+[sub_resource type="Sky" id="Sky_tju5o"]
 sky_material = SubResource("ProceduralSkyMaterial_p45qc")
 
 [sub_resource type="Environment" id="Environment_1gl27"]
 background_mode = 2
-sky = SubResource("Sky_1kf0a")
+sky = SubResource("Sky_tju5o")
 tonemap_mode = 2
 glow_enabled = true
 fog_enabled = true
@@ -33,7 +33,7 @@ fog_light_color = Color(0, 0, 0, 1)
 fog_density = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qac4n"]
-albedo_color = Color(0.133333, 0.545098, 0.133333, 1)
+albedo_color = Color(0.109804, 0.231373, 0.109804, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_acqkd"]
 material = SubResource("StandardMaterial3D_qac4n")
@@ -42,7 +42,7 @@ size = Vector3(100, 1, 100)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oem7n"]
 data = PackedVector3Array(-50, 0.5, 50, 50, 0.5, 50, -50, -0.5, 50, 50, 0.5, 50, 50, -0.5, 50, -50, -0.5, 50, 50, 0.5, -50, -50, 0.5, -50, 50, -0.5, -50, -50, 0.5, -50, -50, -0.5, -50, 50, -0.5, -50, 50, 0.5, 50, 50, 0.5, -50, 50, -0.5, 50, 50, 0.5, -50, 50, -0.5, -50, 50, -0.5, 50, -50, 0.5, -50, -50, 0.5, 50, -50, -0.5, -50, -50, 0.5, 50, -50, -0.5, 50, -50, -0.5, -50, 50, 0.5, 50, -50, 0.5, 50, 50, 0.5, -50, -50, 0.5, 50, -50, 0.5, -50, 50, 0.5, -50, -50, -0.5, 50, 50, -0.5, 50, -50, -0.5, -50, 50, -0.5, 50, 50, -0.5, -50, -50, -0.5, -50)
 
-[sub_resource type="Resource" id="Resource_d2p1c"]
+[sub_resource type="Resource" id="Resource_ukkw7"]
 script = ExtResource("4_diu03")
 amount = 10000
 enabled = true
@@ -51,7 +51,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_ug4b0"]
+[sub_resource type="Resource" id="Resource_pc75e"]
 script = ExtResource("5_dy1pa")
 position = Vector3(0, 0, 0)
 rotation = Vector3(0, 0, 0)
@@ -62,15 +62,15 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_6la46"]
+[sub_resource type="Resource" id="Resource_v5o3e"]
 script = ExtResource("3_2elbv")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_d2p1c"), SubResource("Resource_ug4b0")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_ukkw7"), SubResource("Resource_pc75e")])
 
 [sub_resource type="Resource" id="Resource_2lj2w"]
 script = ExtResource("7_mg6hy")
 size = Vector3(15.891, 1, 17.9774)
 
-[sub_resource type="Resource" id="Resource_1so8n"]
+[sub_resource type="Resource" id="Resource_4lgmr"]
 script = ExtResource("4_diu03")
 amount = 350
 enabled = true
@@ -79,7 +79,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_frsu4"]
+[sub_resource type="Resource" id="Resource_tdjff"]
 script = ExtResource("5_dy1pa")
 position = Vector3(0, 0, 0)
 rotation = Vector3(0, 0, 0)
@@ -90,9 +90,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_btdqa"]
+[sub_resource type="Resource" id="Resource_wyjfr"]
 script = ExtResource("3_2elbv")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_1so8n"), SubResource("Resource_frsu4")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_4lgmr"), SubResource("Resource_tdjff")])
 
 [sub_resource type="Resource" id="Resource_8rj40"]
 script = ExtResource("7_mg6hy")
@@ -122,7 +122,7 @@ shape = SubResource("ConcavePolygonShape3D_oem7n")
 
 [node name="ProtonScatter" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
 script = ExtResource("2_y0loo")
-modifier_stack = SubResource("Resource_6la46")
+modifier_stack = SubResource("Resource_v5o3e")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
@@ -137,7 +137,7 @@ shape = SubResource("Resource_2lj2w")
 
 [node name="ProtonScatter2" type="Node3D" parent="MeshInstance3D/StaticBody3D"]
 script = ExtResource("2_y0loo")
-modifier_stack = SubResource("Resource_btdqa")
+modifier_stack = SubResource("Resource_wyjfr")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
