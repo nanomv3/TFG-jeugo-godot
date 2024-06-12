@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Tfg-jeugo-godot"
-run/main_scene="res://modelos/focos.glb"
+run/main_scene="res://escenas/menu_principal.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 

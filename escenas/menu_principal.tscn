@@ -1,0 +1,109 @@
+[gd_scene load_steps=11 format=3 uid="uid://beqhx2fvrsjun"]
+
+[ext_resource type="Script" path="res://escenas/menu_principal.gd" id="1_vqb8v"]
+[ext_resource type="Texture2D" uid="uid://bd6hft4df2fh1" path="res://assets/noche-luna-oscura-bosque-paisaje-naturaleza-vectorial_104785-1611.jpg" id="2_yingq"]
+[ext_resource type="FontFile" uid="uid://2qhmj5357cwp" path="res://assets/SocialScienceSans_PERSONAL_USE_ONLY.otf" id="3_ofkk1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lnjhj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h55ca"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4ae7"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q2cc"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8nil"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iwrka"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fe2ya"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Menu principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vqb8v")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yingq")
+
+[node name="Titulo principal" type="Label" parent="."]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 29.0
+offset_right = 677.0
+offset_bottom = 162.0
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("3_ofkk1")
+theme_override_font_sizes/font_size = 150
+text = "THE FOG"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = -399.0
+offset_right = 361.0
+offset_bottom = -121.0
+grow_vertical = 0
+
+[node name="Boton jugar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("3_ofkk1")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_lnjhj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h55ca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d4ae7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4q2cc")
+text = "Play"
+
+[node name="Boton config" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("3_ofkk1")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_lnjhj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h55ca")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d4ae7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4q2cc")
+text = "Settings"
+
+[node name="Boton salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("3_ofkk1")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_lnjhj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v8nil")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iwrka")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fe2ya")
+text = "quit"
+
+[connection signal="pressed" from="VBoxContainer/Boton jugar" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Boton config" to="." method="_on_boton_config_pressed"]
+[connection signal="pressed" from="VBoxContainer/Boton salir" to="." method="_on_boton_salir_pressed"]
