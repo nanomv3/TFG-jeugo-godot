@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://ccah13wdjluml"]
+[gd_scene load_steps=14 format=3 uid="uid://ccah13wdjluml"]
 
 [ext_resource type="Texture2D" uid="uid://mo1i15goqe0t" path="res://modelos/kenney_graveyard-kit/Models/GLB format/Textures/colormap.png" id="1_22vpw"]
 [ext_resource type="PackedScene" uid="uid://5qeeqwiyfvvq" path="res://escenas/personaje_fp.tscn" id="2_e1q2t"]
+[ext_resource type="PackedScene" uid="uid://beuitnegohvx5" path="res://escenas/menu_pausa.tscn" id="3_f8eo5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g3b37"]
 sky_top_color = Color(0.027451, 0.0313726, 0.0980392, 1)
@@ -5323,3 +5324,5 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="muros laberinto/muro431/brick-wall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qc200")
+
+[node name="pausa" parent="." instance=ExtResource("3_f8eo5")]

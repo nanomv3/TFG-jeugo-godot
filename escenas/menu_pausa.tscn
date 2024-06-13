@@ -1,0 +1,129 @@
+[gd_scene load_steps=8 format=3 uid="uid://beuitnegohvx5"]
+
+[ext_resource type="FontFile" uid="uid://2qhmj5357cwp" path="res://assets/SocialScienceSans_PERSONAL_USE_ONLY.otf" id="2_0kd7f"]
+
+[sub_resource type="GDScript" id="GDScript_65blv"]
+script/source = "extends CanvasLayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$ColorRect.hide()
+	$Label.hide()
+	$VBoxContainer.hide()
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+func _input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed(\"ui_cancel\"):
+		get_tree().paused = not get_tree().paused
+		$ColorRect.visible = not $ColorRect.visible
+		$Label.visible = not $Label.visible
+		$VBoxContainer.visible = not $VBoxContainer.visible
+		if get_tree().paused:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+
+func _on_resume_pressed():
+	$ColorRect.hide()
+	$Label.hide()
+	$VBoxContainer.hide()
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	get_tree().paused = false
+
+
+func _on_main_menu_pressed():
+	get_tree().paused = false
+	get_tree().change_scene_to_file(\"res://escenas/menu_principal.tscn\")
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_qjwfj"]
+font = ExtResource("2_0kd7f")
+font_size = 100
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mouad"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k3d7x"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7i5nh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vk0c3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Pausa" type="CanvasLayer"]
+process_mode = 3
+script = SubResource("GDScript_65blv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(0, 0, 0, 0.611765)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -394.0
+offset_top = -244.0
+offset_right = 395.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "pause"
+label_settings = SubResource("LabelSettings_qjwfj")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -227.0
+offset_top = -54.0
+offset_right = 227.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="resume" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0kd7f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mouad")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k3d7x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7i5nh")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vk0c3")
+text = "resume"
+
+[node name="main menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0kd7f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mouad")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k3d7x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7i5nh")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vk0c3")
+text = "main menu"
+
+[connection signal="pressed" from="VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="VBoxContainer/main menu" to="." method="_on_main_menu_pressed"]
