@@ -14,7 +14,7 @@ func _ready():
 	
 	if area:
 		area.body_entered.connect(_on_area_body_entered)
-		#area.body_exited.connect(_on_area_body_exited)
+		area.body_exited.connect(_on_area_body_exited)
 	else:
 		print("No se encontro el area 3d")
 
@@ -22,29 +22,42 @@ func _ready():
 func _on_area_body_entered(body):
 	print("nombre: ", body.name)
 	if body.name == "CharacterBody3D":
-		#mostrar_popup()
-		get_tree().change_scene_to_file("res://escenas/laberinto.tscn")
+		$CanvasLayer/ColorRect.visible = true
+		$CanvasLayer/Label.visible = true
+		$CanvasLayer/Label2.visible = true
+		$CanvasLayer/Label3.visible = true
+		$CanvasLayer/VBoxContainer.visible = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		if global.pass_scene == 1:
+			$CanvasLayer/ColorRect.visible = false
+			$CanvasLayer/Label.visible = false
+			$CanvasLayer/Label2.visible = false
+			$CanvasLayer/Label3.visible = false
+			$CanvasLayer/VBoxContainer.visible = false
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			global.pass_scene = 0
+			get_tree().change_scene_to_file("res://escenas/laberinto.tscn")
+		elif global.pass_scene == -1:
+			$CanvasLayer/ColorRect.visible = false
+			$CanvasLayer/Label.visible = false
+			$CanvasLayer/Label2.visible = false
+			$CanvasLayer/Label3.visible = false
+			$CanvasLayer/VBoxContainer.visible = false
+			musica.stop()
+			global.pass_scene = 0
+			get_tree().change_scene_to_file("res://escenas/menu_principal.tscn")
 
 # Método que se llama cuando un cuerpo sale del Area3D
 func _on_area_body_exited(body):
 	if body.name == "CharacterBody3D":
-		ocultar_ventana()
+		$CanvasLayer/ColorRect.visible = false
+		$CanvasLayer/Label.visible = false
+		$CanvasLayer/Label2.visible = false
+		$CanvasLayer/Label3.visible = false
+		$CanvasLayer/VBoxContainer.visible = false
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-# Método para mostrar el Popup
-func mostrar_popup():
-	print("entro en mostrar popup")
-	if ventana:
-		ventana.popup_centered()
-	else:
-		print("No se encontró el nodo Window para mostrar")
 
-# Método para ocultar la ventana
-func ocultar_ventana():
-	print("entro en ocultar popup")
-	if ventana:
-		ventana.hide()
-	else:
-		print("No se encontró el nodo Window para ocultar")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfes1574q5ep3"]
+
+[ext_resource type="AudioStream" uid="uid://du31lgfck10xd" path="res://assets/sinister-criminal-aura-215797.mp3" id="1_av8qq"]
+[ext_resource type="Script" path="res://escenas/audio_stream_player.gd" id="2_k3yoo"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_av8qq")
+script = ExtResource("2_k3yoo")

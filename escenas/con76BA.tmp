@@ -63,9 +63,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8wocd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_afuxd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_hed2v")
 theme_override_styles/focus = SubResource("StyleBoxFlat_7mhxc")
-text = "music: on"
+text = "button"
 
-[node name="awsd" type="Button" parent="VBoxContainer"]
+[node name="boton2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("3_dgkhd")
@@ -74,7 +74,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8wocd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_afuxd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_hed2v")
 theme_override_styles/focus = SubResource("StyleBoxFlat_7mhxc")
-text = "controls: awsd keys"
+text = "button"
 
 [node name="Boton volver" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -88,5 +88,5 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_js432")
 text = "return"
 
 [connection signal="pressed" from="VBoxContainer/musica" to="." method="_on_boton_1_pressed"]
-[connection signal="pressed" from="VBoxContainer/awsd" to="." method="_on_boton_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/boton2" to="." method="_on_boton_2_pressed"]
 [connection signal="pressed" from="VBoxContainer/Boton volver" to="." method="_on_boton_volver_pressed"]

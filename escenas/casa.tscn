@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://d0i1o4rrrlrjx"]
+[gd_scene load_steps=14 format=3 uid="uid://d0i1o4rrrlrjx"]
 
 [ext_resource type="Texture2D" uid="uid://cr7h6vn7l4ymf" path="res://modelos/kenney_modular-buildings/Models/GLB format/Textures/colormap.png" id="1_wla8t"]
 [ext_resource type="Script" path="res://escenas/casa.gd" id="2_33je3"]
 [ext_resource type="Script" path="res://escenas/puerta_casa.gd" id="3_k02o0"]
+[ext_resource type="PackedScene" uid="uid://c6qcuwewgturt" path="res://escenas/acertijo_casa.tscn" id="4_dgqbs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_faiin"]
 resource_name = "colormap"
@@ -118,10 +119,5 @@ script = ExtResource("3_k02o0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00900158, 0.371399, 0.362741)
 shape = SubResource("BoxShape3D_vijia")
 
-[node name="Window" type="Window" parent="."]
-initial_position = 1
-
-[node name="Label" type="Label" parent="Window"]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "holamundo"
+[node name="CanvasLayer" parent="." instance=ExtResource("4_dgqbs")]
+process_mode = 3

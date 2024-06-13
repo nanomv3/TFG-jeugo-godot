@@ -1,0 +1,121 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6qcuwewgturt"]
+
+[ext_resource type="Script" path="res://escenas/acertijo_casa.gd" id="1_iecv8"]
+[ext_resource type="FontFile" uid="uid://2qhmj5357cwp" path="res://assets/SocialScienceSans_PERSONAL_USE_ONLY.otf" id="2_6jtuq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bwsm5"]
+font = ExtResource("2_6jtuq")
+font_size = 100
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wmwni"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tub1r"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_820xt"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_if3rf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_iecv8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(0, 0, 0, 0.611765)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -394.0
+offset_top = -244.0
+offset_right = 395.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "prueba"
+label_settings = SubResource("LabelSettings_bwsm5")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -379.0
+offset_top = -52.0
+offset_right = 379.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_6jtuq")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -379.0
+offset_top = -37.0
+offset_right = 379.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_6jtuq")
+text = "Una vez marques tu respuesta, vuelve a entrar por la puerta"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -227.0
+offset_top = 150.0
+offset_right = 227.0
+offset_bottom = 228.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="respuesta 1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6jtuq")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_wmwni")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tub1r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_820xt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_if3rf")
+text = "respuesta"
+
+[node name="respuesta 2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6jtuq")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_wmwni")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tub1r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_820xt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_if3rf")
+text = "main menu"
+
+[connection signal="pressed" from="VBoxContainer/respuesta 1" to="." method="_on_respuesta_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/respuesta 2" to="." method="_on_respuesta_2_pressed"]

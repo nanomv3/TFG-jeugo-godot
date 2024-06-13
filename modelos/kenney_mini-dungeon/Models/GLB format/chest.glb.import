@@ -13,8 +13,8 @@ dest_files=["res://.godot/imported/chest.glb-d650d600152905f2a346800d11a5a6d4.sc
 
 [params]
 
-nodes/root_type=""
-nodes/root_name=""
+nodes/root_type="Node3D"
+nodes/root_name="cofre"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
