@@ -19,14 +19,40 @@ func _on_area_body_entered(body):
 
 func _on_area_body_exited(body):
 	if body.name == "CharacterBody3D":
+		$CanvasLayer/ColorRect.visible = false
+		$CanvasLayer/Label.visible = false
+		$CanvasLayer/Label2.visible = false
+		$CanvasLayer/Label3.visible = false
+		$CanvasLayer/VBoxContainer.visible = false
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		can_interact = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if can_interact and Input.is_action_just_pressed("interaccion"):
-		print("entro en la foking interaccion")
-		musica.stop()
+		$CanvasLayer/ColorRect.visible = true
+		$CanvasLayer/Label.visible = true
+		$CanvasLayer/Label2.visible = true
+		$CanvasLayer/Label3.visible = true
+		$CanvasLayer/VBoxContainer.visible = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_tree().change_scene_to_file("res://escenas/menu_principal.tscn")
+		if global.pass_scene == 1:
+			$CanvasLayer/ColorRect.visible = false
+			$CanvasLayer/Label.visible = false
+			$CanvasLayer/Label2.visible = false
+			$CanvasLayer/Label3.visible = false
+			$CanvasLayer/VBoxContainer.visible = false
+			global.pass_scene = 0
+			musica.stop()
+			get_tree().change_scene_to_file("res://escenas/creditos.tscn")
+		elif global.pass_scene == -1:
+			$CanvasLayer/ColorRect.visible = false
+			$CanvasLayer/Label.visible = false
+			$CanvasLayer/Label2.visible = false
+			$CanvasLayer/Label3.visible = false
+			$CanvasLayer/VBoxContainer.visible = false
+			global.pass_scene = 0
+			musica.stop()
+			get_tree().change_scene_to_file("res://escenas/gameover_menu.tscn")
 
 

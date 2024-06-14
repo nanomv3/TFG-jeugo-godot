@@ -13,14 +13,6 @@ func _process(delta):
 	pass
 
 
-func _on_boton_jugar_pressed():
+func _on_texture_button_pressed():
 	MusicaMenus.stop()
-	if not global.mute_music:
-		musica.play()
-	get_tree().change_scene_to_file("res://escenas/suelo_jardin.tscn")
-
-func _on_boton_salir_pressed():
-	get_tree().quit()
-
-func _on_boton_config_pressed():
-	get_tree().change_scene_to_file("res://escenas/configuracion.tscn")
+	get_tree().change_scene_to_file("res://escenas/menu_principal.tscn")

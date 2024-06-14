@@ -2,7 +2,17 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	print("musica: ", global.mute_music)
+	if not global.mute_music:
+		$VBoxContainer/musica.text = "music: on"
+	else:
+		$VBoxContainer/musica.text = "music: off"
+	
+	
+	if not global.awsd:
+		$VBoxContainer/awsd.text = "controls: arrows"
+	else:
+		$VBoxContainer/awsd.text = "controls: awsd keys"
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,11 +30,11 @@ func _on_boton_1_pressed():
 		$VBoxContainer/musica.text = "music: on"
 	else:
 		global.mute_music = true
+		MusicaMenus.stop()
 		$VBoxContainer/musica.text = "music: off"
 
 
 func _on_boton_2_pressed():
-	print("music: ", global.mute_music)
 	if global.awsd:
 		global.awsd = false
 		$VBoxContainer/awsd.text = "controls: arrows"

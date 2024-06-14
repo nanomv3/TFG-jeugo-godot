@@ -10,15 +10,19 @@ config_version=5
 
 [application]
 
-config/name="Tfg-jeugo-godot"
+config/name="The Fog"
 run/main_scene="res://escenas/menu_principal.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
 [autoload]
 
 musica="*res://escenas/audio_stream_player.tscn"
 global="*res://escenas/global.gd"
+MusicaMenus="*res://escenas/musica_menus.tscn"
 
 [display]
 

@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=3 uid="uid://byvbt2j3cy88a"]
+
+[ext_resource type="Script" path="res://escenas/gameover_menu.gd" id="1_34byk"]
+[ext_resource type="Texture2D" uid="uid://b3fxr8pbchn1o" path="res://assets/cementerio-paisaje-noche_107791-338.jpg" id="1_kueq1"]
+[ext_resource type="FontFile" uid="uid://2qhmj5357cwp" path="res://assets/SocialScienceSans_PERSONAL_USE_ONLY.otf" id="2_hlbku"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7jtvj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0577s"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vs4lq"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsa4j"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_34byk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_kueq1")
+
+[node name="Titulo principal" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -398.0
+offset_top = 60.0
+offset_right = 398.0
+offset_bottom = 178.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_hlbku")
+theme_override_font_sizes/font_size = 150
+text = "GAME OVER"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="return to menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_constants/h_separation = 5
+theme_override_fonts/font = ExtResource("2_hlbku")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_7jtvj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0577s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vs4lq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rsa4j")
+text = "return to menu"
+
+[connection signal="pressed" from="VBoxContainer/return to menu" to="." method="_on_return_to_menu_pressed"]

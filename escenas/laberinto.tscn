@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://ccah13wdjluml"]
+[gd_scene load_steps=17 format=3 uid="uid://ccah13wdjluml"]
 
 [ext_resource type="Texture2D" uid="uid://mo1i15goqe0t" path="res://modelos/kenney_graveyard-kit/Models/GLB format/Textures/colormap.png" id="1_22vpw"]
 [ext_resource type="PackedScene" uid="uid://5qeeqwiyfvvq" path="res://escenas/personaje_fp.tscn" id="2_e1q2t"]
 [ext_resource type="PackedScene" uid="uid://beuitnegohvx5" path="res://escenas/menu_pausa.tscn" id="3_f8eo5"]
 [ext_resource type="PackedScene" uid="uid://whdpn0mb47wl" path="res://escenas/cofre.tscn" id="4_nnfvc"]
 [ext_resource type="PackedScene" uid="uid://cnf0piqdw7bui" path="res://modelos/focos.glb" id="5_66sx4"]
+[ext_resource type="PackedScene" uid="uid://cukps8q4o10p2" path="res://escenas/cofre_fake.tscn" id="6_glinl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g3b37"]
 sky_top_color = Color(0.027451, 0.0313726, 0.0980392, 1)
@@ -5333,9 +5334,31 @@ shape = SubResource("ConcavePolygonShape3D_qc200")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.824, 0.5, -47.252)
 
 [node name="foco" parent="." instance=ExtResource("5_66sx4")]
-transform = Transform3D(1.16174, 0, -3.82758, 0, 4, 0, 3.82758, 0, 1.16174, 8.54226, 0.458352, -47.8912)
+transform = Transform3D(1.16174, 0, -3.82758, 0, 4, 0, 3.82758, 0, 1.16174, 8.54226, 0.453037, -47.6024)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="foco"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.0416088, 0.469452, 0.137103)
 light_energy = 7.949
 omni_range = 20.6162
+
+[node name="foco2" parent="." instance=ExtResource("5_66sx4")]
+transform = Transform3D(2.34006, 0, -3.24409, 0, 4, 0, 3.24409, 0, 2.34006, -23.72, 0.470805, -12.441)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="foco2"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.0416088, 0.469452, 0.137103)
+light_energy = 7.949
+omni_range = 20.6162
+
+[node name="cofrefake" parent="." instance=ExtResource("6_glinl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.447, 0.5, -10.636)
+
+[node name="foco3" parent="." instance=ExtResource("5_66sx4")]
+transform = Transform3D(3.36518, 0, 2.16231, 0, 4, 0, -2.16231, 0, 3.36518, -9.24345, 0.462196, 6.09366)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="foco3"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.0416088, 0.469452, 0.137103)
+light_energy = 7.949
+omni_range = 20.6162
+
+[node name="cofrefake2" parent="." instance=ExtResource("6_glinl")]
+transform = Transform3D(-0.791874, 0, -0.610684, 0, 1, 0, 0.610684, 0, -0.791874, -6.64155, 0.5, 9.76073)

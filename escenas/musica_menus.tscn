@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5138yn2i3tfc"]
+
+[ext_resource type="AudioStream" uid="uid://dhi5txab3tbhx" path="res://assets/pajaros.mp3" id="1_r1yml"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_r1yml")
